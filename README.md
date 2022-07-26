@@ -14,4 +14,4 @@
 
 # API
 []: # Language: ruby
-[]: # Path: crud-on-rails\lib\api\v1\x_api.rb
+[]: # Path: crud-on-rails\lib\api\v1\users_controller.rb
