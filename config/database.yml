@@ -1,0 +1,18 @@
+default: &default
+  adapter: sqlite3
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: af2b
+  password: q12we34r
+  timeout: 5000
+
+development:
+  <<: *default
+  database: db/data_validations.sqlite3
+
+test:
+  <<: *default
+  database: db/test.sqlite3
+
+production:
+  <<: *default
+  database: db/production.sqlite3
