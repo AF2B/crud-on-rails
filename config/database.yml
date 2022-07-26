@@ -7,7 +7,7 @@ default: &default
 
 development:
   <<: *default
-  database: db/data_validations.sqlite3
+  database: db/development.sqlite3
 
 test:
   <<: *default
