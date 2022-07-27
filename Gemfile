@@ -11,7 +11,9 @@ gem 'rails', '~> 6.1.6', '>= 6.1.6.1'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'rspec-rails', '~> 5.1', '>= 5.1.2'
+  gem 'database_cleaner-active_record'
+  gem 'factory_bot_rails'
+  gem 'rspec-rails'
   gem 'sqlite3', '~> 1.4'
 end
 
