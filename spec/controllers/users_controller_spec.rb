@@ -1,10 +1,22 @@
-require 'rspec_helper'
+require 'rails_helper'
 
 describe Api::V1::UsersController do
-  context 'If @users is empty' do
-    it 'should return a message' do
+  context 'If GET index' do
+    it 'should return all users' do
       get :index
-      expect(response.body).to eq('{"message":"No users found"}')
+      expect(response.status).to eq(200)
+      expect(response.body).to eq(User.all.to_json)
+    end
+
+    it 'should have an empty array' do
+      get :index
+      expect(assigns(:users)).to be_empty
+    end
+
+    it 'should have one user in the array' do
+      create(:user) # FIXME - FactoryBot doesn't work here
+      get :index
+      expect(assigns(:users)).to_not be_empty
     end
   end
 end
