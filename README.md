@@ -4,7 +4,6 @@
 - Ruby
 - Ruby On Rails
 - RSpec
-- cpf_cnpj
 
 - GET /users Lista todos os usuários.
 - GET /users/:id Lista um usuário.
