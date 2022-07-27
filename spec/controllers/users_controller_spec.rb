@@ -19,6 +19,14 @@ describe Api::V1::UsersController do
       expect(assigns(:users)).to_not be_empty
     end
   end
+
+  context 'GET show' do
+    let(:user) { create(:user) }
+    it 'should return a successful response' do
+      get :show, params: { id: user.id }
+      expect(response).to have_http_status(:success)
+    end
+  end
 end
 
 describe Api::V1::UsersController do
