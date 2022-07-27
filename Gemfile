@@ -13,9 +13,10 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'database_cleaner-active_record'
   gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'rails-controller-testing'
   gem 'rspec-rails'
   gem 'sqlite3', '~> 1.4'
-  gem 'rails-controller-testing'
 end
 
 group :development do
