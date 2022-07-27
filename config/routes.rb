@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  resources :users, only: %i[index show create update destroy]
+  namespace :api do
+    namespace :v1 do
+      resources :users
+    end
+  end
 end
