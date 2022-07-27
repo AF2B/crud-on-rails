@@ -14,7 +14,7 @@ describe Api::V1::UsersController do
     end
 
     it 'should have one user in the array' do
-      create(:user) # FIXME - FactoryBot doesn't work here
+      create(:user)
       get :index
       expect(assigns(:users)).to_not be_empty
     end
