@@ -1,1 +1,0 @@
-Diretório temporario para armazenamento de testes das controllers.
