@@ -65,13 +65,18 @@ GEM
     builder (3.2.4)
     byebug (11.1.3)
     concurrent-ruby (1.1.10)
+    cpf_cnpj (0.5.0)
     crass (1.0.6)
     diff-lcs (1.5.0)
+    email_validator (2.2.3)
+      activemodel
     erubi (1.10.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
+    jsonapi-serializer (2.2.0)
+      activesupport (>= 4.2)
     loofah (2.18.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -159,6 +164,9 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
+  cpf_cnpj (~> 0.5.0)
+  email_validator (~> 2.2, >= 2.2.3)
+  jsonapi-serializer (~> 2.2)
   puma (~> 5.0)
   rails (~> 6.1.6, >= 6.1.6.1)
   rspec-rails (~> 5.1, >= 5.1.2)
