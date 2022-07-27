@@ -20,7 +20,7 @@ class Api::V1::UsersController < ApplicationController
 
     if @user
       @user.save
-      render json: @user
+      render json: @user, status: 201, message: 'User created'
     else
       render json: { error: 'User not created' }, status: 422
     end
