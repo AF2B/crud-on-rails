@@ -7,10 +7,10 @@
 - cpf_cnpj
 
 - GET /users Lista todos os usuários.
-- GET /user/:id Lista um usuário.
-- POST /user Cria um usuário.
-- PUT /user/:id Atualiza um usuário.
-- DELETE /user/:id Deleta um usuário.
+- GET /users/:id Lista um usuário.
+- POST /users Cria um usuário.
+- PUT /users/:id Atualiza um usuário.
+- DELETE /users/:id Deleta um usuário.
 
 # API
 []: # Language: ruby
