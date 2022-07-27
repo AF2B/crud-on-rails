@@ -1,4 +1,5 @@
 class Api::V1::UsersController < ApplicationController
+  before_action :set_user, only: [:show]
 
   def index
     @users = User.all
@@ -7,8 +8,6 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def show
-    @user = -> { set_user }.call
-
     if @user
       render json: @user
     else
