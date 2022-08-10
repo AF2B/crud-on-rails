@@ -12,6 +12,7 @@ gem 'rails', '~> 6.1.6', '>= 6.1.6.1'
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'database_cleaner-active_record'
+  gem 'email_verifier'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'rails-controller-testing'

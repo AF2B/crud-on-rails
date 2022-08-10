@@ -36,5 +36,9 @@ module CrudOnRails
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+    
+    EmailVerifier.config do |config|
+      config.verifier_email = "realname@realdomain.com"
+    end
   end
 end
