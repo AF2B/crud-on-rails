@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2022_08_12_193932) do
     t.string "address"
     t.string "city"
     t.string "country"
-    t.string "phone", null: false
+    t.string "phone"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "password"
